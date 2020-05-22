@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chuyuxuan</title>
+<link  rel="stylesheet"   type="text/css"   href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<body class="body1">
+  
+   
+
+
+
+  <div class="video" >
+    <video id="video" class="video"   autoplay loop>
+      <source src="src/1.mp4" type="video/mp4" />
+       <!-- 注意，可以将自己的视频链接修改。 -->
+    </video>
+    <div id="audio"> 
+      <i class="fa fa-volume-up fa-fw"  onclick="play()"></i>开
+      <br>
+      <i class="fa fa-volume-off fa-fw" onclick="muted()"></i>关
+    </div>
+
+<script>
+function play(){
+   var plays=document.getElementById("video");
+  plays.muted=false;
+}
+function muted(){
+  var plays=document.getElementById("video");
+  plays.play();
+  plays.muted = true;
+}
+</script>
+
+
+  </div>
+  <div>
+    
+  </div>
+  <div class="login-form">
+      <h1>进入二次元的世界</h1>
+        <div class="form-input">
+          <input   type="text" name="email" placeholder="下面写密码">
+        </div>
+        <div class="form-input">
+          <input  type="password" name="password" placeholder="上面写账号">
+        </div>
+        <div class="form-input">
+          <a href="404.html">
+          <button type="button" name="login in" >登  录</button>
+          </a>
+        </div>
+      <a href="404.html" class="forget">注册</a>
+    </div>
+
+  </body>
+</html>
